@@ -8,8 +8,9 @@ import su.afk.cleancode.data.service.AuthService
 import su.afk.cleancode.domain.repository.AuthRepository
 import su.afk.cleancode.domain.repository.models.User
 import su.afk.cleancode.util.Resource
+import javax.inject.Inject
 
-class AuthRepositoryImpl(
+class AuthRepositoryImpl @Inject constructor(
     private val api: AuthService,
     private val prefs: SharedPreferences
 ): AuthRepository {
