@@ -1,6 +1,6 @@
 package su.afk.cleancode.data.models
 
-data class LoginResponse(
+data class AuthResponse(
     val email: String,
     val firstName: String,
     val gender: String,

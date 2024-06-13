@@ -1,13 +1,16 @@
 package su.afk.cleancode.domain.repository
 
+import su.afk.cleancode.domain.repository.models.User
+import su.afk.cleancode.util.Resource
+
 interface AuthRepository {
 
     // Login user and get token
-    fun login(username: String, password: String)
+    suspend fun login(username: String, password: String): Resource<User>
 
     // Get current auth user
-    fun authUser()
+    suspend fun authUser(): Resource<User>
 
     // Refresh auth session
-    fun refreshToken()
+    suspend fun refreshToken()
 }
