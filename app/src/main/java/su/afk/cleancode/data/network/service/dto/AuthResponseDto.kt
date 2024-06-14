@@ -1,6 +1,6 @@
 package su.afk.cleancode.data.network.service.dto
 
-data class AuthResponse(
+data class AuthResponseDto(
     val email: String,
     val firstName: String,
     val gender: String,
