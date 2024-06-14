@@ -3,11 +3,11 @@ package su.afk.cleancode.data.repositoty
 import android.content.SharedPreferences
 import retrofit2.HttpException
 import su.afk.cleancode.data.mappers.toUser
-import su.afk.cleancode.data.network.service.models.AuthBodyRequest
+import su.afk.cleancode.data.network.service.dto.AuthBodyRequest
 import su.afk.cleancode.data.network.service.AuthService
 import su.afk.cleancode.domain.repository.AuthRepository
-import su.afk.cleancode.domain.models.User
-import su.afk.cleancode.util.Resource
+import su.afk.cleancode.domain.model.User
+import su.afk.cleancode.common.Resource
 import javax.inject.Inject
 
 class AuthRepositoryImpl @Inject constructor(

@@ -1,4 +1,4 @@
-package su.afk.cleancode.util
+package su.afk.cleancode.common
 
 sealed class Resource<T>(val data: T? = null, val messageError: String? = null) {
     class Success<T>(data: T) : Resource<T>(data)

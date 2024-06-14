@@ -1,4 +1,4 @@
-package su.afk.cleancode.present.authScreen
+package su.afk.cleancode.presentation.authScreen
 
 sealed class AuthUiEvent {
     data class SignInUsernameChanged(val value: String): AuthUiEvent()

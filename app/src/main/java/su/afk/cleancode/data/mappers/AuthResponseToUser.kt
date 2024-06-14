@@ -1,7 +1,7 @@
 package su.afk.cleancode.data.mappers
 
-import su.afk.cleancode.data.network.service.models.AuthResponse
-import su.afk.cleancode.domain.models.User
+import su.afk.cleancode.data.network.service.dto.AuthResponse
+import su.afk.cleancode.domain.model.User
 
 
 fun AuthResponse.toUser(): User {

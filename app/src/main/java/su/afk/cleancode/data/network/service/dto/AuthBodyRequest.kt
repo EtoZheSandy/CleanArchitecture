@@ -1,4 +1,4 @@
-package su.afk.cleancode.data.network.service.models
+package su.afk.cleancode.data.network.service.dto
 
 data class AuthBodyRequest(
     val username: String,

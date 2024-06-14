@@ -1,4 +1,4 @@
-package su.afk.cleancode.ui.theme
+package su.afk.cleancode.presentation.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

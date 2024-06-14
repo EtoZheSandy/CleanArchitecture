@@ -1,7 +1,7 @@
 package su.afk.cleancode.domain.use_case
 
-import su.afk.cleancode.domain.models.AuthResult
-import su.afk.cleancode.domain.models.User
+import su.afk.cleancode.domain.model.AuthResult
+import su.afk.cleancode.domain.model.User
 import su.afk.cleancode.domain.repository.AuthRepository
 import javax.inject.Inject
 

@@ -1,4 +1,4 @@
-package su.afk.cleancode.present.authScreen
+package su.afk.cleancode.presentation.authScreen
 
 import android.widget.Toast
 import androidx.compose.foundation.layout.Arrangement
@@ -21,9 +21,9 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.ramcosta.composedestinations.annotation.Destination
 import com.ramcosta.composedestinations.navigation.DestinationsNavigator
-import su.afk.cleancode.domain.models.AuthResult
-import su.afk.cleancode.present.destinations.AuthScreenDestination
-import su.afk.cleancode.present.destinations.PrivateScreenDestination
+import su.afk.cleancode.domain.model.AuthResult
+import su.afk.cleancode.presentation.destinations.AuthScreenDestination
+import su.afk.cleancode.presentation.destinations.PrivateScreenDestination
 
 @Composable
 @Destination(start = true)

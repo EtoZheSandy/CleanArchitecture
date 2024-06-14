@@ -4,8 +4,8 @@ import retrofit2.http.Body
 import retrofit2.http.GET
 import retrofit2.http.Header
 import retrofit2.http.POST
-import su.afk.cleancode.data.network.service.models.AuthBodyRequest
-import su.afk.cleancode.data.network.service.models.AuthResponse
+import su.afk.cleancode.data.network.service.dto.AuthBodyRequest
+import su.afk.cleancode.data.network.service.dto.AuthResponse
 
 interface AuthService {
 

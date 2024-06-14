@@ -1,4 +1,4 @@
-package su.afk.cleancode.domain.models
+package su.afk.cleancode.domain.model
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize
 

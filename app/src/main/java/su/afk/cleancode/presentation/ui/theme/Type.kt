@@ -1,4 +1,4 @@
-package su.afk.cleancode.ui.theme
+package su.afk.cleancode.presentation.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

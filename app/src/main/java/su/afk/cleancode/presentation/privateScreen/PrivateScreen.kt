@@ -1,8 +1,6 @@
-package su.afk.cleancode.present.privateScreen
+package su.afk.cleancode.presentation.privateScreen
 
-import android.widget.Space
 import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
@@ -14,7 +12,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
 import com.ramcosta.composedestinations.annotation.Destination
-import su.afk.cleancode.domain.models.User
+import su.afk.cleancode.domain.model.User
 
 @Destination
 @Composable

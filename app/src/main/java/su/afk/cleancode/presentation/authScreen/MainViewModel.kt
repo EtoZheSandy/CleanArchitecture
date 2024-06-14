@@ -1,4 +1,4 @@
-package su.afk.cleancode.present.authScreen
+package su.afk.cleancode.presentation.authScreen
 
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -9,10 +9,9 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.flow.receiveAsFlow
 import kotlinx.coroutines.launch
-import su.afk.cleancode.domain.models.AuthResult
-import su.afk.cleancode.domain.models.User
+import su.afk.cleancode.domain.model.AuthResult
+import su.afk.cleancode.domain.model.User
 import su.afk.cleancode.domain.use_case.AuthUseCases
-import su.afk.cleancode.domain.use_case.LoginUseCase
 import javax.inject.Inject
 
 @HiltViewModel

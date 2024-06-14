@@ -1,4 +1,4 @@
-package su.afk.cleancode.domain.models
+package su.afk.cleancode.domain.model
 
 // можем добавить любые данные любого типа
 sealed class AuthResult<T>(val data: T? = null, val messageError: String? = null) {
