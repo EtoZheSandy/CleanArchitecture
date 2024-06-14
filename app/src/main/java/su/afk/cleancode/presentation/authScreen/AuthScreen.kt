@@ -29,7 +29,7 @@ import su.afk.cleancode.presentation.destinations.PrivateScreenDestination
 @Destination(start = true)
 fun AuthScreen(
     navigator: DestinationsNavigator,
-    viewModel: MainViewModel = hiltViewModel(),
+    viewModel: AuthViewModel = hiltViewModel(),
 ) {
 
     val state = viewModel.authState

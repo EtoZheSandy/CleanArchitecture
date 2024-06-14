@@ -15,7 +15,7 @@ import su.afk.cleancode.domain.use_case.AuthUseCases
 import javax.inject.Inject
 
 @HiltViewModel
-class MainViewModel @Inject constructor(
+class AuthViewModel @Inject constructor(
     private val authUseCases: AuthUseCases
 ): ViewModel() {
 
