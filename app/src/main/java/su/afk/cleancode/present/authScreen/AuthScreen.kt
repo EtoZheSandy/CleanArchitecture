@@ -53,8 +53,6 @@ fun AuthScreen(
                 is AuthResult.AuthErrorToken -> {
                     Toast.makeText(context, "Время сессии вышло", Toast.LENGTH_LONG).show()
                 }
-
-                is AuthResult.AuthLoading -> Unit
             }
         }
     }
