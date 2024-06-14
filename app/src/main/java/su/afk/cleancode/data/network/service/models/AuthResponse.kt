@@ -1,4 +1,4 @@
-package su.afk.cleancode.data.models
+package su.afk.cleancode.data.network.service.models
 
 data class AuthResponse(
     val email: String,

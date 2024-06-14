@@ -2,7 +2,9 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
     alias(libs.plugins.hilt)
-    alias(libs.plugins.kapt)
+//    alias(libs.plugins.kapt)
+    alias(libs.plugins.ksp)
+    id("kotlin-parcelize")
 }
 
 android {
@@ -58,17 +60,23 @@ dependencies {
     implementation("com.squareup.retrofit2:converter-gson:2.11.0")
     implementation("com.squareup.okhttp3:logging-interceptor:4.12.0")
     implementation("com.squareup.okhttp3:okhttp:4.12.0")
-    implementation("com.google.code.gson:gson:2.10.1")
 
     //Dagger - Hilt
     implementation ("com.google.dagger:hilt-android:2.51.1")
-    kapt ("com.google.dagger:hilt-android-compiler:2.51.1")
+    ksp ("com.google.dagger:hilt-android-compiler:2.51.1")
     implementation ("androidx.hilt:hilt-navigation-compose:1.2.0")
 
     // Coroutine Lifecycle Scopes
-    implementation ("androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.1")
-    implementation ("androidx.lifecycle:lifecycle-viewmodel-compose:2.8.1")
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
+    implementation ("androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.2")
+    implementation ("androidx.lifecycle:lifecycle-viewmodel-compose:2.8.2")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.8.0")
+
+    // compose-destinations
+    implementation("io.github.raamcosta.compose-destinations:core:1.10.2")
+    ksp("io.github.raamcosta.compose-destinations:ksp:1.10.2")
+
+    // Coil
+    implementation("io.coil-kt:coil-compose:2.6.0")
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)

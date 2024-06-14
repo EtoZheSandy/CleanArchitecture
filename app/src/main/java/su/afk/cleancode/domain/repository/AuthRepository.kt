@@ -1,6 +1,6 @@
 package su.afk.cleancode.domain.repository
 
-import su.afk.cleancode.domain.repository.models.User
+import su.afk.cleancode.domain.models.User
 import su.afk.cleancode.util.Resource
 
 interface AuthRepository {

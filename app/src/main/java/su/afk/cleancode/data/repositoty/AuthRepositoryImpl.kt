@@ -3,10 +3,10 @@ package su.afk.cleancode.data.repositoty
 import android.content.SharedPreferences
 import retrofit2.HttpException
 import su.afk.cleancode.data.mappers.toUser
-import su.afk.cleancode.data.models.AuthBodyRequest
-import su.afk.cleancode.data.service.AuthService
+import su.afk.cleancode.data.network.service.models.AuthBodyRequest
+import su.afk.cleancode.data.network.service.AuthService
 import su.afk.cleancode.domain.repository.AuthRepository
-import su.afk.cleancode.domain.repository.models.User
+import su.afk.cleancode.domain.models.User
 import su.afk.cleancode.util.Resource
 import javax.inject.Inject
 
@@ -18,7 +18,7 @@ class AuthRepositoryImpl @Inject constructor(
     override suspend fun login(username: String, password: String): Resource<User> {
         val response = try {
             api.loginPost(
-                AuthBodyRequest(username, password, 30)
+                AuthBodyRequest(username, password, 1)
             )
         } catch(e: HttpException) {
             if(e.code() == 401) {

@@ -11,7 +11,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.create
 import su.afk.cleancode.data.repositoty.AuthRepositoryImpl
-import su.afk.cleancode.data.service.AuthService
+import su.afk.cleancode.data.network.service.AuthService
 import su.afk.cleancode.domain.repository.AuthRepository
 import javax.inject.Singleton
 

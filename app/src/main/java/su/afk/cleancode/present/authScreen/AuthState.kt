@@ -1,9 +1,8 @@
 package su.afk.cleancode.present.authScreen
 
+// состояние экрана
 data class AuthState(
     val isLoading: Boolean = false,
-    val signUpUsername: String = "",
-    val signUpPassword: String = "",
-    val signInUsername: String = "",
-    val signInPassword: String = ""
+    val signInUsername: String = "emilys",
+    val signInPassword: String = "emilyspass",
 )
